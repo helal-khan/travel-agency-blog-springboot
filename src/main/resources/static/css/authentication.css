@@ -1,0 +1,72 @@
+.error {
+	color: #ff0000;
+	font-weight: bold;
+	margin-top: -20px!important;
+	text-align: left!important;
+}
+.btn-login{
+	background-color: #0072BC!important;
+}
+.goLogin{
+	margin-top: 14px;
+}
+input:hover, input[type="text"]:focus, input[type="password"]:focus {
+    box-shadow: inset 0px 0px 16px -6px #007739!important;
+    border: 1px solid #00A651!important;
+}
+input.error { 
+   box-shadow: inset 0px 0px 16px -6px red!important;
+   border: 2px solid red!important;
+}
+.user-account #login input.error {
+	margin-bottom: 8px!important;
+}
+
+.user-account #forgotPassword input.error {
+	margin-bottom: 8px!important;
+}
+
+input.error:focus { 
+   box-shadow: inset 0px 0px 16px -6px red!important;
+   border: 2px solid red!important;
+}
+.user-account input {
+    margin-bottom: 4px!important;
+}
+.user-account #login input {
+    margin-bottom: 27px!important;
+}
+.user-account #forgotPassword input {
+    margin-bottom: 40px!important;
+    margin-top: 20px!important;
+}
+.user-account .btn {
+    margin-top: 0px!important;
+    padding: 10px;
+}
+.user-account .btn.btn-primary {
+    font-weight: 600;
+}
+.user-account .checkbox, .radio {
+    margin-top: 0px!important;
+    margin-bottom: 13px!important;
+}	
+.inner-addon {
+  position: relative;
+}
+.left-addon .auth-icon {
+    left: 0px;
+    font-size: 18px;
+    color: #00A651;
+}
+.inner-addon .auth-icon {
+    position: absolute;
+    padding: 12px;
+    pointer-events: none;
+}
+.left-addon input {
+    padding-left: 38px;
+}
+.main {
+	margin-top:6%;
+}
