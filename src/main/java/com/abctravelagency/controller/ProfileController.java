@@ -2,6 +2,7 @@ package com.abctravelagency.controller;
 
 import java.security.Principal;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import javax.validation.Valid;
@@ -63,7 +64,42 @@ public class ProfileController {
 				respone.setStatus(myStatus);
 			}
 			return respone;
+
+		} catch (Exception e) {
+			respone.setValidated(false);
+			return respone;
+		}
+	}
+
+	@PostMapping(value = "/update-privacy")
+	@ResponseBody
+	public StatusJsonRespone updatePrivacy(@Valid Status s, BindingResult result) {
+		StatusJsonRespone respone = new StatusJsonRespone();
+		try {
+			respone.setValidated(true);
 			
+			Status status = statusRepository.findById(s.getId()).get();
+			status.setAccess(s.getAccess());
+			statusRepository.save(status);
+			respone.setStatus(status);
+			return respone;
+
+		} catch (Exception e) {
+			respone.setValidated(false);
+			return respone;
+		}
+	}
+	
+	@PostMapping(value = "/delete-status")
+	@ResponseBody
+	public StatusJsonRespone deleteStatus(@Valid Status s, BindingResult result) {
+		StatusJsonRespone respone = new StatusJsonRespone();
+		try {
+			respone.setValidated(true);
+			Status status = statusRepository.findById(s.getId()).get();
+			status.setAccess(s.getAccess());
+			statusRepository.delete(status);
+			return respone;
 		} catch (Exception e) {
 			respone.setValidated(false);
 			return respone;

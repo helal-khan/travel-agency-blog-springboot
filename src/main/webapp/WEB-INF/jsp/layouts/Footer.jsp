@@ -23,6 +23,7 @@
 	<!--validation -->
 	<script src="/js/lib/jquery.validate.min.js"></script>
 	<script src="/js/lib/additional-methods.min.js"></script>
+	<script src="http://emis.icddrb.org:8080/emis-monitoringtools/resources/notiflix/notiflix-1.9.1.min.js"></script>
 	<!-- JS -->
 	<script src="/js/App.js"></script>
   </body>

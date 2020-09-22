@@ -16,9 +16,12 @@ public class Role extends Audit{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
 	private String role;
+	
 	@OneToMany(mappedBy = "role", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<User> user;
+	
 	public int getId() {
 		return id;
 	}

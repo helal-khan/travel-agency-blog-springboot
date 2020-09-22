@@ -22,8 +22,13 @@
 		<link rel="stylesheet" href="/css/lib/responsive.css">
 		<link rel="stylesheet" href="/css/lib/toastr.css">
 		<link rel="stylesheet" href="/css/lib/select2.min.css" type="text/css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- CSS Custom-->
 		<link rel="stylesheet" href="css/style.css" type="text/css">
+		
+		<link rel="stylesheet" href="http://emis.icddrb.org:8080/emis-monitoringtools/resources/notiflix/notiflix-1.9.1.min.css" type="text/css">
+		
+		
 		<style type="text/css">
 			label.error {
 				color:red;
@@ -78,7 +83,8 @@
 							class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="${pageContext.request.contextPath}">
-						<img class="img-responsive" width="40px" height="40px" src="img/globe.png" alt="Logo"></a>
+						<img class="img-responsive" width="40px" height="40px" src="img/globe.png" alt="Logo">
+						</a>
 						<a class="navbar-brand head-text" href="${pageContext.request.contextPath}/home">ABC Travel Agency</a>
 				</div>
 				<!-- /navbar-header -->
@@ -109,7 +115,7 @@
 							  <a href="#" class="dropdown-toggle" data-toggle="dropdown">${user.firstName} ${user.lastName}<span class="caret"></span></a>				
 							  <ul class="dropdown-menu">
 				                <li>
-				                	<a href="${pageContext.request.contextPath}/profile"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+				                	<a href="${pageContext.request.contextPath}/profile"><i  class="fa fa-user" aria-hidden="true"></i> Profile</a>
 			                	</li>
 				                <li>
 				                	<a href="javascript:$.logout()"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a>
